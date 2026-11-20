@@ -1,0 +1,26 @@
+[project]
+name = "numpy-study"
+version = "0.1.0"
+description = "Python project for studying NumPy"
+readme = "README.md"
+authors = [
+    { name = "Mohamed Almatry", email = "moalmatry2000@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.5",
+]
+
+[project.scripts]
+numpy-study = "numpy_study:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.6",
+    "notebook>=7.6.5",
+]
